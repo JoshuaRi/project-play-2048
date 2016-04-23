@@ -12,7 +12,7 @@ def play2048( times ):
     # 4. print the final score after all tries to the screen 
     
     browser = webdriver.Firefox()
-    browser.get('https://gabrielcirulli.github.io/2048/')
+    browser.get('https://gabrielecirulli.github.io/2048/')
     
     htmlElem = browser.find_element_by_tag_name('html')
     scoreElem = browser.find_element_by_class_name('score-container')
@@ -26,6 +26,7 @@ def play2048( times ):
         htmlElem.send_keys(Keys.RIGHT)
         move +=1
           
+    
     print('Good job you finished the game, your final score is: ' + scoreElem.text)
     
     
