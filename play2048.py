@@ -24,6 +24,7 @@ def play2048( times ):
         htmlElem.send_keys(Keys.LEFT)
         htmlElem.send_keys(Keys.DOWN)
         htmlElem.send_keys(Keys.RIGHT)
+        move +=1
           
     print('Good job you finished the game, your final score is: ' + scoreElem.text)
     
